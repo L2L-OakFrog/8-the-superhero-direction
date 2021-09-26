@@ -1,0 +1,32 @@
+.card-caontainer
+{
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: turquoise;
+}
+.card-caontainer img
+{
+    margin: 10px;
+    border-radius: 50%;
+    height: 100px;
+    width: 150px;
+}
+.cover
+{
+    display: flex;
+    justify-content: center;
+}
+.info
+{
+    text-align: center;
+}
+.btn-add
+{
+    color: white;
+    background-color: #6245ef;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
