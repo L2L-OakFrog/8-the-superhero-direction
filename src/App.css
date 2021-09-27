@@ -1,11 +1,12 @@
-/* html
+html
 {
-  background-image: url('');
+  /* background-image: url('https://www.investopedia.com/thmb/SppWLpMQCR7dTrHq022rjDAe6TU=/1337x1003/smart/filters:no_upscale()/GettyImages-1054017850-0c7ca7d8368c4ab681a3d9c0fd2892e8.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:auto;
-} */
+  background-size:auto; */
+  background-color: azure;
+}
 .App {
   text-align: center;
 }

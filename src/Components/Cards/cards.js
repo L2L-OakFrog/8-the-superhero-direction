@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faUserPlus, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './Cards.css';
 
 const Cards = (props) => {
     const {name, img, age, founder, netWorth, residence} = props.card;
     const icon = <FontAwesomeIcon icon={faUserPlus} />
+    const sicon = <FontAwesomeIcon icon={faEnvelope} />
     //console.log(props);
     return (
         <div className='card-caontainer'>
@@ -22,6 +23,8 @@ const Cards = (props) => {
                 onClick={() => props.handleBtn(props.card)} 
                 className='btn-add'>
                 Add {icon}</button>
+                <br />
+                <button className='social'>{sicon} </button>
             </div>
         </div>
     );
