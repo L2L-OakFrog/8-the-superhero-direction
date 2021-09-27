@@ -1,21 +1,28 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Cards from '../Cards/Cards';
+import List from '../List/List';
+import Summery from '../Summery/Summery';
 import './Main.css';
 
 const Main = () => {
+    /* State Declare */
     const [cards, setCards] = useState([]); // cards state
-    const [summery, setSummery] = useState([]); // summery state
+    const [summary, setSummary] = useState([]); // summery state
+    /* Data Load */
     useEffect(() => {
         fetch('./fakeData.JSON')
         .then(res => res.json())
         .then(data => setCards(data));
     }, [])
-    // Button
-    const handlebtn = (members) =>{
-        const newSummery = [...summery, members];
-        setSummery(newSummery);
+    /* Button Handler */
+    const handleBtn = (card) =>{
+        
+        const newSummary = [...summary, card];
+        setSummary(newSummary);
+        
     }
+    /* Cards HTML */
     return (
         <div className='main-container'>
         <div className='cards-container'>
@@ -23,15 +30,16 @@ const Main = () => {
                 cards.map(card => <Cards 
                     key = {card.id}
                     card = {card}
-                    handlebtn = {handlebtn}
+                    handleBtn = {handleBtn}
                     ></Cards>)
             }
         </div>
-        <div className='value-container'>
-            <h3>Team Members: {summery.length}</h3>
+        <div>
+            <div className='summary-container'>
+                <Summery summary={summary}></Summery>
+            </div>
         </div>
     </div>
     );
 };
-
 export default Main;

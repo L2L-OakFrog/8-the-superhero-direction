@@ -3,7 +3,12 @@
     margin: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
+    transition: 0.6s;
+}
+.card-caontainer:hover
+{
     background-color: turquoise;
+    box-shadow: 4px 4px 7px gray;
 }
 .card-caontainer img
 {
@@ -14,6 +19,7 @@
 }
 .cover
 {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
