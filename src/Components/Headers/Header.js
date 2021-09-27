@@ -9,9 +9,9 @@ const Header = () => {
         <div>
             <div className='navbar'>
             <nav>
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Connect</a>
+                <a href="#Home">Home</a>
+                <a href="#AboutUs">About Us</a>
+                <a href="#Connect">Connect</a>
                 <input type="text" /><button>{icon}</button>
             </nav>
             </div>

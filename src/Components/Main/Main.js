@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Cards from '../Cards/Cards';
-import List from '../List/List';
 import Summery from '../Summery/Summery';
 import './Main.css';
 
