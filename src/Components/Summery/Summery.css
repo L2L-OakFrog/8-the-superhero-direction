@@ -2,3 +2,8 @@ h3{
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
+.summary
+{
+    width: 375px;
+    position: fixed;
+}

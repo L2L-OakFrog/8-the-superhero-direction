@@ -21,9 +21,10 @@ const Main = () => {
         setSummary(newSummary);
         
     }
-    /* Cards HTML */
+    /* Main Section */
     return (
-        <div className='main-container'>
+    <div className='main-container'>
+        {/* Cards */}
         <div className='cards-container'>
             {
                 cards.map(card => <Cards 
@@ -34,6 +35,7 @@ const Main = () => {
             }
         </div>
         <div>
+            {/* Summary */}
             <div className='summary-container'>
                 <Summery summary={summary}></Summery>
             </div>

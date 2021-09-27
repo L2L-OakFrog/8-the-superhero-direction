@@ -2,8 +2,7 @@ import React from 'react';
 import "./Summery.css";
 
 const Summery = (props) => {
-    //console.log(props.summary);
-    const {summary} = props;
+    const {summary} = props; //Destructuring
     let sum = 0;
     let lists = [];
     for(const card of summary)
@@ -11,15 +10,14 @@ const Summery = (props) => {
         sum = sum + card.netWorth;
         //lists = [...lists, card.name];
         lists = lists +" "+ card.name;
-        console.log(lists);
     }
     return (
-        <div>
+        <div className='summary'>
             <h3>Summary</h3>
             <h4>Team Members: {summary.length}</h4>
             <p><strong>Total:</strong> ${sum} Billion</p>
             <p><strong>People in the List:</strong><br />
-                {lists}
+                <i>{lists}</i>
             </p>
         </div>
     );
